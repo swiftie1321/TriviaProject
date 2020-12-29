@@ -8,6 +8,7 @@
     tools:context=".MainActivity">
     
     <TextView
+        android:id="@+id/welcome_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Welcome to the Trivia Game!"
@@ -22,7 +23,7 @@
         android:layout_marginTop="200dp" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/log_in_buttom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Log In"
@@ -37,7 +38,7 @@
         android:layout_marginTop="20dp" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/sign_up_buttom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Sign Up"
