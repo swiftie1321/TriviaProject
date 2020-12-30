@@ -2,30 +2,45 @@ package com.example.trivia;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Switch;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
+    //Initiate the Sign Up button
     private Button sign_up;
-    private TextView output_text;
-
-    public Button getSign_up() {
-        return sign_up;
-    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        sign_up = findViewById(R.id.sign_up_buttom);
+        // initiate a Switch
+        Switch dark_mode_switch = (Switch) findViewById(R.id.dark_mode);
 
-        SignUpScreen sing_up_object = new SignUpScreen(this);
-        sign_up.setOnClickListener(sing_up_object);
+        //Displayed text on switch button
+        dark_mode_switch.setTextOn("yes");
+        dark_mode_switch.setTextOff("no");
+
+        //Sign Up Button
+        sign_up = findViewById(R.id.sign_up_buttom);
+        SignUpScreen sign_up_object = new SignUpScreen();
+
+        sign_up.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, SignUpScreen.class));
+            }
+        });
+
     }
 
+    @Override
+    public void onClick(View v) {
 
+    }
 }

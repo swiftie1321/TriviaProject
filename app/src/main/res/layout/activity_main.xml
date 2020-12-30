@@ -6,7 +6,19 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity">
-    
+
+    <Switch
+        android:id="@+id/dark_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_marginLeft="5dp"
+        android:text="Dark Mode:"
+        android:checked="false"
+        android:textOn="Yes"
+        android:textOff="No"/>
+
+
     <TextView
         android:id="@+id/welcome_text"
         android:layout_width="wrap_content"
@@ -44,4 +56,5 @@
         android:text="Sign Up"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="10dp"/>
+
 </androidx.appcompat.widget.LinearLayoutCompat>
