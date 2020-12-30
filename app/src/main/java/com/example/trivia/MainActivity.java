@@ -11,16 +11,15 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    //Initiate the Sign Up button
     private Button sign_up;
+    private Switch dark_mode_switch;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // initiate a Switch
-        Switch dark_mode_switch = (Switch) findViewById(R.id.dark_mode);
+        dark_mode_switch = (Switch) findViewById(R.id.dark_mode);
 
         //Displayed text on switch button
         dark_mode_switch.setTextOn("yes");
@@ -36,7 +35,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(new Intent(MainActivity.this, SignUpScreen.class));
             }
         });
-
     }
 
     @Override
