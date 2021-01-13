@@ -23,17 +23,38 @@
         android:layout_height="wrap_content"
         android:text="Welcome to the Trivia Game!"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="150dp"/>
+        android:layout_marginTop="50sp"
+        android:textSize="30sp"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Already have an account?"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="200dp" />
+        android:layout_marginTop="50sp" />
+
+    <EditText
+        android:id="@+id/username_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="username" />
+
+    <EditText
+        android:id="@+id/password_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:inputType="numberPassword"
+        android:hint="Password"/>
 
     <Button
-        android:id="@+id/log_in_buttom"
+        android:id="@+id/log_in_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Log In"
@@ -45,10 +66,10 @@
         android:layout_height="wrap_content"
         android:text="New? Sign up!"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="20dp" />
+        android:layout_marginTop="50sp" />
 
     <Button
-        android:id="@+id/sign_up_buttom"
+        android:id="@+id/sign_up_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Sign Up"
