@@ -31,7 +31,7 @@ public class logged_In_Screen extends AppCompatActivity implements View.OnClickL
         String username = intent.getExtras().getString("username");
         String password = intent.getExtras().getString("password");
 
-        username_display.setText("Hello" + username);
+        username_display.setText("Hello " + username);
 
     }
 
