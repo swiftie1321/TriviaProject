@@ -23,9 +23,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //Dark mode button
-        dark_mode_switch = (Switch) findViewById(R.id.dark_mode);
-
         //Sign Up and Log In Buttons
         sign_up = findViewById(R.id.sign_up_button);
         log_in = findViewById(R.id.log_in_button);

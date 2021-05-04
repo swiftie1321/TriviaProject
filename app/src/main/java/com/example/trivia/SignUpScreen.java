@@ -34,20 +34,11 @@ public class SignUpScreen extends AppCompatActivity implements View.OnClickListe
         signed_up_go_to_next_activity = findViewById(R.id.signed_up_button);
         username = findViewById(R.id.editTextPersonName);
         password = findViewById(R.id.editTextNumberPassword);
-        entered_user_age = findViewById(R.id.userAge);
-
-        entered_user_age.setMinValue(1990);
-        entered_user_age.setMaxValue(2020);
 
         signed_up_go_to_next_activity.setOnClickListener(this);
         users_list = getSharedPreferences("usersList", 0);
 
-        entered_user_age.setOnValueChangedListener(new NumberPicker.OnValueChangeListener() {
-            @Override
-            public void onValueChange(NumberPicker picker, int oldVal, int newVal) {
-                age.setText(newVal);
-            }
-        });
+
     }
 
     @Override

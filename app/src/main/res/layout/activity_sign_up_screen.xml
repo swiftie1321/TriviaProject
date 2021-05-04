@@ -5,17 +5,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".SignUpScreen">
+    tools:context=".SignUpScreen"
+    android:background="@drawable/math_background">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@color/white"
         android:text="Create username:"
         android:layout_gravity="center"
         android:layout_marginTop="150dp"/>
 
     <EditText
         android:id="@+id/editTextPersonName"
+        android:background="@color/white"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -27,12 +30,14 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@color/white"
         android:text="Create a password:"
         android:layout_gravity="center"
         android:layout_marginTop="10dp"/>
 
     <EditText
         android:id="@+id/editTextNumberPassword"
+        android:background="@color/white"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -44,18 +49,23 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Enter your age:"
+        android:background="@color/white"
+        android:text="Enter your birth date:"
         android:layout_gravity="center"
         android:layout_marginTop="15dp"/>
 
-    <NumberPicker
-        android:id="@+id/userAge"
+    <EditText
         android:layout_width="wrap_content"
-        android:layout_height="100dp"
-        android:layout_gravity="center" />
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:inputType="date"/>
 
     <Button
         android:id="@+id/signed_up_button"
+        android:background="@android:color/white"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Sign Up!"
