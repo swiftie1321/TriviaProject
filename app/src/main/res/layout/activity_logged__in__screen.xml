@@ -6,10 +6,13 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".SignUpScreen"
-    android:background="@drawable/math_background">
+    android:background="@drawable/numbers">
 
     <TextView
         android:id="@+id/usernameDisplay"
+        android:background="@color/white"
+        android:text=" Progress Bar "
+        android:textColor="@color/black"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="50sp"
@@ -27,6 +30,8 @@
 
     <Button
         android:id="@+id/start_new_game"
+        android:background="@android:color/white"
+        android:textColor="@android:color/black"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Start New Game"
@@ -35,6 +40,8 @@
 
     <Button
         android:id="@+id/statistics"
+        android:background="@android:color/white"
+        android:textColor="@android:color/black"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="statistics"

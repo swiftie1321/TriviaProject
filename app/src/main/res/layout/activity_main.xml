@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/math_background"
+    android:background="@drawable/numbers"
     tools:context=".MainActivity">
 
 
@@ -13,18 +13,20 @@
         android:id="@+id/welcome_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Welcome to the Trivia Game!"
+        android:text=" Welcome to the Trivia Game! "
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="50sp"
         android:background="@color/white"
+        android:textColor="@color/black"
         android:textSize="30sp"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Already have an account?"
+        android:text=" Already have an account? "
         android:layout_gravity="center_horizontal"
         android:background="@color/white"
+        android:textColor="@color/black"
         android:layout_marginTop="50sp" />
 
     <EditText
@@ -62,9 +64,10 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New? Sign up!"
+        android:text=" New? Sign up! "
         android:layout_gravity="center_horizontal"
         android:background="@color/white"
+        android:textColor="@color/black"
         android:layout_marginTop="50sp" />
 
     <Button

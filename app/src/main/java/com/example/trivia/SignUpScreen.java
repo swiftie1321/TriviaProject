@@ -48,12 +48,11 @@ public class SignUpScreen extends AppCompatActivity implements View.OnClickListe
             Intent intent_sign_up = new Intent(this, logged_In_Screen.class);
             intent_sign_up.putExtra("username", username.getText().toString());
             intent_sign_up.putExtra("password", password.getText().toString());
-            intent_sign_up.putExtra("age", age.getText().toString());
 
             SharedPreferences.Editor edit = users_list.edit();
             edit.putString("username", username.getText().toString());
             edit.putString("password", password.getText().toString());
-            edit.putString("age", age.getText().toString());
+
             edit.commit();
             Toast.makeText(this,"User Created!", Toast.LENGTH_SHORT).show();
 

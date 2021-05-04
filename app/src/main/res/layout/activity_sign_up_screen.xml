@@ -6,15 +6,17 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".SignUpScreen"
-    android:background="@drawable/math_background">
+    android:background="@drawable/numbers">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@color/white"
-        android:text="Create username:"
+        android:textColor="@color/black"
+        android:text=" Create username: "
         android:layout_gravity="center"
-        android:layout_marginTop="150dp"/>
+        android:layout_marginTop="100dp"
+        android:textSize="25sp"/>
 
     <EditText
         android:id="@+id/editTextPersonName"
@@ -30,10 +32,12 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textSize="25sp"
         android:background="@color/white"
+        android:textColor="@color/black"
         android:text="Create a password:"
         android:layout_gravity="center"
-        android:layout_marginTop="10dp"/>
+        android:layout_marginTop="25dp"/>
 
     <EditText
         android:id="@+id/editTextNumberPassword"
@@ -49,10 +53,12 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textSize="25sp"
         android:background="@color/white"
+        android:textColor="@color/black"
         android:text="Enter your birth date:"
         android:layout_gravity="center"
-        android:layout_marginTop="15dp"/>
+        android:layout_marginTop="25dp"/>
 
     <EditText
         android:layout_width="wrap_content"
@@ -61,14 +67,17 @@
         android:layout_marginTop="10dp"
         android:layout_gravity="center"
         android:ems="10"
+        android:hint="Password"
         android:inputType="date"/>
 
     <Button
         android:id="@+id/signed_up_button"
         android:background="@android:color/white"
+        android:textColor="@android:color/white"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Sign Up!"
-        android:layout_gravity="center" />
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"/>
 
 </LinearLayout>
