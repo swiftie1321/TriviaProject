@@ -56,7 +56,7 @@
         android:textSize="25sp"
         android:background="@color/white"
         android:textColor="@color/black"
-        android:text="Enter your birth date:"
+        android:text=" Enter the year you were born: "
         android:layout_gravity="center"
         android:layout_marginTop="25dp"/>
 
@@ -67,8 +67,8 @@
         android:layout_marginTop="10dp"
         android:layout_gravity="center"
         android:ems="10"
-        android:hint="Password"
-        android:inputType="date"/>
+        android:hint="Birth year"
+        android:inputType="numberDecimal"/>
 
     <Button
         android:id="@+id/signed_up_button"

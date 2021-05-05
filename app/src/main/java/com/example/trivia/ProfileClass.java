@@ -79,6 +79,4 @@ public class ProfileClass {
             this.fails++;
         }
     }
-
-
 }

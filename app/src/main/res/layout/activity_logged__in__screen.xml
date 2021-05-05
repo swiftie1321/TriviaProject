@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".SignUpScreen"
-    android:background="@drawable/numbers">
+    android:background="@drawable/numbers"
+    android:id="@+id/relative">
 
     <TextView
         android:id="@+id/usernameDisplay"
