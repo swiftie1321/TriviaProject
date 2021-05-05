@@ -15,6 +15,7 @@ public class SignUpScreen extends AppCompatActivity implements View.OnClickListe
     private Button signed_up_go_to_next_activity;
     private EditText username;
     private EditText password;
+    private ProfileClass newUser;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +26,8 @@ public class SignUpScreen extends AppCompatActivity implements View.OnClickListe
         signed_up_go_to_next_activity = findViewById(R.id.signed_up_button);
         username = findViewById(R.id.editTextPersonName);
         password = findViewById(R.id.editTextNumberPassword);
+
+        newUser.setName(username.toString());
 
         signed_up_go_to_next_activity.setOnClickListener(this);
     }

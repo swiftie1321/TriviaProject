@@ -2,7 +2,6 @@ package com.example.trivia;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.LayoutInflater;
@@ -35,11 +34,6 @@ public class logged_In_Screen extends AppCompatActivity implements View.OnClickL
 
         start_new_game_button = findViewById(R.id.start_new_game);
         username_display = findViewById(R.id.usernameDisplay);
-
-        Intent intent = getIntent();
-
-        String username = intent.getExtras().getString("username");
-        username_display.setText("Hello " + username);
 
         statistics_button = findViewById(R.id.statistics);
         relativeLayout = (RelativeLayout) findViewById(R.id.relative);
