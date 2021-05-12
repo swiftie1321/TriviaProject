@@ -27,7 +27,8 @@ public class SignUpScreen extends AppCompatActivity implements View.OnClickListe
         username = findViewById(R.id.editTextPersonName);
         password = findViewById(R.id.editTextNumberPassword);
 
-        newUser.setName(username.toString());
+        newUser = new ProfileClass();
+        newUser.setName(username.getText().toString());
 
         signed_up_go_to_next_activity.setOnClickListener(this);
     }

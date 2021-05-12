@@ -19,6 +19,8 @@ public class ProfileClass {
         this.totalQuestionsAnsweredWrong = totalQuestionsAnsweredWrong;
     }
 
+    public ProfileClass() {}
+
     //Get functions.
     public String getName() {
         return name;
